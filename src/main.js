@@ -16,6 +16,7 @@ const params = {
 };
 
 let page = 1;
+let dynamicUrl = `${url}?p.Page=${page}`;
 let hasNextPage = true;
 const clients = [];
 
@@ -44,7 +45,7 @@ while (hasNextPage && page <= pageLimit)
     
 
     // Check if there is a next page.
-    hasNextPage = $("a.next").length > 0;
+    hasNextPage = $(".pagination-wrapper li[class='next'] a").length > 0;
     page++;
 }
 // Save clients to Dataset - a table-like storage.
