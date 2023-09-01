@@ -8,15 +8,64 @@
             "type": "string",
             "description": "The URL of website you want to get the data from.",
             "editor": "textfield",
-            "prefill": "https://www.dmpublishing.cz/en/references"
+            "default": "https://www.dmpublishing.cz/en/references"
         },
-        "pageLimit": {
-            "title": "Limits",
-            "type": "integer",
-            "description": "Limits to avoid overload",
-            "minimum": 1,
-            "default": 10
+        "domain": {
+            "title": "Domain name",
+            "type": "string",
+            "description": "The Domain name",
+            "editor": "textfield",
+            "default": "https://www.dmpublishing.cz"
+        },
+        "mainCssSelector": {
+            "title": "The main Css Selector",
+            "type": "string",
+            "description": "The main CssSelector for the clients canvas",
+            "editor": "textfield",
+            "default": ".list-item-wrapper"
+        },
+        "nextPageSelector": {
+            "title": "The next page Selector",
+            "type": "string",
+            "description": "The next page Selector button",
+            "editor": "textfield",
+            "default": ".pagination-wrapper li[class='next'] a"
+        },
+        "nameSelector": {
+            "title": "The Name Selector",
+            "type": "string",
+            "description": "The client Name Selector",
+            "editor": "textfield",
+            "default": ".list-item-heading"
+        },
+        "annotationSelector": {
+            "title": "The Annotation Selector",
+            "type": "string",
+            "description": "The client Annotation Selector",
+            "editor": "textfield",
+            "default": ".list-item-anotation"
+        },
+        "contentSelector": {
+            "title": "The Content Selector",
+            "type": "string",
+            "description": "The client Content Selector",
+            "editor": "textfield",
+            "default": ".overlay-txt"
+        },
+        "linkSelector": {
+            "title": "The Link Selector",
+            "type": "string",
+            "description": "The client Link Selector",
+            "editor": "textfield",
+            "default": "a"
+        },
+        "imageSelector": {
+            "title": "The Image Selector",
+            "type": "string",
+            "description": "The client Image Selector",
+            "editor": "textfield",
+            "default": ".list-item-image.js-lazy-loading-bg-img"
         }
     },
-    "required": ["url", "pageLimit"]
+    "required": ["url", "domain", "mainCssSelector", "nextPageSelector", "nameSelector", "annotationSelector", "contentSelector", "linkSelector", "imageSelector"]
 }

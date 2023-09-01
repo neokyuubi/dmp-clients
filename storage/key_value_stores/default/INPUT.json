@@ -1,4 +1,11 @@
 {
     "url" : "https://www.dmpublishing.cz/en/references",
-    "pageLimit": 10
+    "domain" : "https://www.dmpublishing.cz",
+    "mainCssSelector" : ".list-item-wrapper",
+    "nextPageSelector" : ".pagination-wrapper li[class='next'] a",
+    "nameSelector" : ".list-item-heading",
+    "annotationSelector" : ".list-item-anotation",
+    "contentSelector" : ".overlay-txt",
+    "linkSelector" : "a",
+    "imageSelector" : ".list-item-image.js-lazy-loading-bg-img"
 }
