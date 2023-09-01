@@ -1,0 +1,22 @@
+{
+    "title": "Scrape data from a web page",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "url": {
+            "title": "URL of the page",
+            "type": "string",
+            "description": "The URL of website you want to get the data from.",
+            "editor": "textfield",
+            "prefill": "https://www.dmpublishing.cz/en/references"
+        },
+        "pageLimit": {
+            "title": "Limits",
+            "type": "integer",
+            "description": "Limits to avoid overload",
+            "minimum": 1,
+            "default": 10
+        }
+    },
+    "required": ["url", "pageLimit"]
+}

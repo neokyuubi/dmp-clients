@@ -1,0 +1,12 @@
+{
+    "actorSpecification": 1,
+    "name": "dmp-clients",
+    "title": "dmp scraper",
+    "description": "Scrape scrap clients from DMP pages",
+    "version": "0.3",
+    "meta": {
+        "templateId": "js-start"
+    },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile"
+}
